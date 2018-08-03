@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/littledeviltiles"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/PunchIn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/punchin"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#de0101"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PunchIn" />
+
+    <EditText
+        android:id="@+id/Time2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Milliseconds: 00:00:00"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Clock" />
+
+    <EditText
+        android:id="@+id/Time3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Seconds: 00:00:00"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time2" />
+
+    <TextView
+        android:id="@+id/Clock"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/clockout"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
+
+</android.support.constraint.ConstraintLayout>
